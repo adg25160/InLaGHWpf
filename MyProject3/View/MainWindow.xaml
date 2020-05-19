@@ -1,0 +1,47 @@
+﻿<Window x:Class="MyProject3.View.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyProject3.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="300" Title="INLACsWpf" ResizeMode="NoResize"
+             Background="AliceBlue">
+    <Grid RenderTransformOrigin="0.646,0.455">
+        <Label Content="Input Flie" HorizontalAlignment="Left" Margin="45,28,0,0" VerticalAlignment="Top"/>
+        <Button Content="Import File" HorizontalAlignment="Left" Margin="162,34,0,0" VerticalAlignment="Top" Width="75" Click="BtnImportFile_Click"/>
+
+        <Label Content="Material" HorizontalAlignment="Left" Margin="45,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="E" HorizontalAlignment="Left" Margin="45,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="PR" HorizontalAlignment="Left" Margin="162,108,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.16,0.56"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TxtInput" Height="23" Margin="45,148,0,0" TextWrapping="Wrap" Text="14668" VerticalAlignment="Top" Width="77"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,148,0,0" TextWrapping="Wrap" Text="0.3" VerticalAlignment="Top" Width="75"/>
+
+        <Label Content="BC" HorizontalAlignment="Left" Margin="45,198,0,0" VerticalAlignment="Top"/>
+        <Button Content="PickMode" HorizontalAlignment="Left" Margin="162,201,0,0" VerticalAlignment="Top" Width="76" Click="BtnPickMode_Click"/>
+
+        <Label Content="U1" HorizontalAlignment="Left" Margin="45,249,0,0" VerticalAlignment="Top"/>
+        <Label Content="U2" HorizontalAlignment="Left" Margin="76,249,0,0" VerticalAlignment="Top"/>
+        <Label Content="U3" HorizontalAlignment="Left" Margin="107,249,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TxtU1" Height="23" Margin="45,279,0,0" VerticalAlignment="Top" Width="25"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TxtU2" Height="23" Margin="77,279,0,0" VerticalAlignment="Top" Width="25"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TxtU3" Height="23" Margin="108,279,0,0" VerticalAlignment="Top" Width="25"/>
+
+        <Label Content="UR1" HorizontalAlignment="Left" Margin="148,249,0,0" VerticalAlignment="Top"/>
+        <Label Content="UR2" HorizontalAlignment="Left" Margin="177,249,0,0" VerticalAlignment="Top"/>
+        <Label Content="UR3" HorizontalAlignment="Left" Margin="211,249,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TxtUR1" Height="23" Margin="155,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TxtUR2" Height="23" Margin="184,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TxtUR3" Height="23" Margin="213,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25"/>
+
+        <Button x:Name="btn1" Content="Set" HorizontalAlignment="Left" Margin="163,326,0,0" VerticalAlignment="Top" Width="75" Click="BtnSet_Click"/>
+
+        <TextBox HorizontalAlignment="Left" x:Name="TxtPickRes" Height="51" Margin="48,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Text="選點記錄"/>
+        <Button Content="Save" Name="btnSave" HorizontalAlignment="Left" Margin="48,326,0,0" VerticalAlignment="Top" Width="75" Click="Btn_SaveClick"/>
+        <TextBox HorizontalAlignment="Left" Name="TxtSaveRes" Height="48" Margin="48,426,0,0" TextWrapping="Wrap" Text="存點記錄" VerticalAlignment="Top" Width="189"/>
+        <TextBox HorizontalAlignment="Left" Name="TxtAllRes" Height="51" Margin="48,491,0,0" TextWrapping="Wrap" Text="全部記錄" VerticalAlignment="Top" Width="189"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="48,562,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Name="TxtDotRank" Height="94" Margin="48,599,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
+
+    </Grid>
+</Window>
